@@ -8,4 +8,5 @@ Thumbs.db
 # build
 dist
 
-free_domain.txt
+free_domains.txt
+domains.txt

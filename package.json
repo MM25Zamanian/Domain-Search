@@ -5,8 +5,9 @@
   "author": "Ali Mihandoost <AliMihandoost@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn serve",
+    "start": "yarn && yarn create-file && yarn build-ts && yarn serve",
     "serve": "cd dist && node index.js",
+    "create-file": "touch domains.txt && touch free_domains.txt"
     "build": "yarn build-ts",
     "build-ts": "rm -rf dist && tsc --build .",
     "watch-node": "nodemon --watch dist dist/index.js",

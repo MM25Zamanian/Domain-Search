@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-starter-kit",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Ali Mihandoost <AliMihandoost@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn serve",
+    "serve": "cd dist && node index.js",
+    "build": "yarn build-ts",
+    "build-ts": "rm -rf dist && tsc --build .",
+    "watch-node": "nodemon --watch dist dist/index.js",
+    "watch-node-debug": "nodemon --watch dist --inspect dist/index.js",
+    "watch-ts": "rm -rf dist && tsc -w"
+  },
+  "dependencies": {
+    "tslib": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.20",
+    "nodemon": "^2.0.12",
+    "typescript": "^4.1.3"
+  }
+}
